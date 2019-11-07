@@ -37,7 +37,7 @@
         </header>
         <img class="first-screen__main-image" src="img/iphone-5-in-hand-png.png" width="498" height="314">
         <a class="first-screen__btn-buy button" href="#">Скачать приложение</a>
-        <div class="first-screen_os os">
+        <div class="first-screen__os os">
           <ul class="os__list">
             <li class="os__item">
               <a class="os__link os__link--ios" href="#">Скачать для Ios</a>
@@ -53,21 +53,21 @@
         <p class="first-screen__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
-        <div class="advantages-wrapper">
+        <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
             <p class="advantages__slogan">Устали от серости мегаполиса?</p>
             <p class="advantages__slogan">Нам есть, что вам предложить!</p>
             <li class="advantages__item">
-              <h3 class="advantages_title">Поднимает настроение</h3>
+              <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволитт вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages_title">Меняет мир вокруг</h3>
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages_title">Заводит новых друзей</h3>
+              <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -92,14 +92,65 @@
             </li>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="reviews-toggle slider-toggle" type="button">1</button>
-            <button class="reviews-toggle slider-toggle" type="button">2</button>
-            <button class="reviews-toggle slider-toggle" type="button">3</button>
+            <button class="reviews__toggle slider__toggle" type="button">1</button>
+            <button class="reviews__toggle slider__toggle" type="button">2</button>
+            <button class="reviews__toggle slider__toggle" type="button">3</button>
           </p>
         </div>
       </section>
-      <section>
-        Тарифы
+      <section class="tariff">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <table class="tariff__list">
+          <tr class="tariff__title">
+            <td>Неизвестный</td>
+            <td>Стандарт 3.99 USD</td>
+            <td>Неизвестный</td>
+          </tr>
+          <tr class="tariff__filter">
+            <td class="tariff__value">Неизвестный</td>
+            <td class="tariff__value tariff__value--on">Розовый фильтр</td>
+            <td class="tariff__value">Неизвестный</td>
+          </tr>
+          <tr class="tariff__smile">
+            <td class="tariff__value">Неизвестный</td>
+            <td class="tariff__value tariff__value--on">Смайлики</td>
+            <td class="tariff__value">Неизвестный</td>
+          </tr>
+          <tr class="tariff__comments">
+            <td class="tariff__value">Неизвестный</td>
+            <td class="tariff__value tariff__value--off">Комментарии</td>
+            <td class="tariff__value">Неизвестный</td>
+          </tr>
+        </table>
+        <p class="tariff__toggles slider__toggles">
+          <button class="tariff__toggle slider__toggle" type="button">1</button>
+          <button class="tariff__toggle slider__toggle" type="button">2</button>
+          <button class="tariff__toggle slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="contacts">
+        <address>
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <b class="contacts__text">Звоните:</b>
+              <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__text">Пишите:</b>
+              <a class="contacts__value" href="mailto:mail@htmlacademy.ru" >mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__text">Приезжайте в гости:</b>
+              <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </address>
+        <div class="contacts__google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858715975966!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570701570175!5m2!1sru!2sru" style="border:0; width:100%; height:320px" allowfullscreen=""></iframe>
+          <img class="contacts__image-map" src="img/layer-153.jpg" width="320" height="645"  alt="ул. Большая Конюшенная 19/8">
+        </div>
       </section>
     </main>
   </body>
