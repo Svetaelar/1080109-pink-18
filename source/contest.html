@@ -31,6 +31,63 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__name">
+          <label class="form__label-entry">Фамилия
+            <input class="form__input-entry" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+          </label>
+          <label class="form__label-entry">Имя
+            <input class="form__input-entry" type="text" name="name" value="" placeholder="Введите ваше имя *">
+          </label>
+          <label class="form__label-entry">Отчество
+            <input class="form__input-entry" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="form-title">Ваши безбашенные достижения в путешествии</legend>
+            <input class="visually-hidden" id="shark" type="checkbox" name="shark" checked>
+            <label class="form__label-option form__label-sel" for="shark">Сделал селфи на пляже с акулой</label>
+
+            <input class="visually-hidden" id="beach" type="checkbox" name="beach" checked>
+            <label class="form__label-option form__label-sel" for="beach"> Обгорел на пляже </label>
+
+            <input class="visually-hidden" id="ChakNoris" type="checkbox" name="ChakNoris">
+            <label class="form__label-option form__label-sel" for="ChakNoris">Видел Чака Нориса</label>
+
+            <input class="visually-hidden" id="souvenir" type="checkbox" name="souvenir">
+            <label class="form__label-option form__label-sel" for="souvenir">Накупил сувениров</label>
+
+            <input class="visually-hidden" id="tower" type="checkbox" name="tower">
+            <label class="form__label-option form__label-sel" for="tower">Удержал башню</label>
+
+            <input class="visually-hidden" id="hotel" type="checkbox" name="hotel">
+            <label class="form__label-option form__label-sel" for="hotel">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="">
+          <label class="form__label-entry">Номер телефона
+            <input class="form__input-entry" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="form__label-entry">Адрес почты
+            <input class="form__input-entry" type="email" name="email" value="" placeholder="Введите почту *">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="form-title">С каким приложением путешествовали?</legend>
+            <input class="visually-hidden" id="ios" type="radio" name="ios" value="0">
+            <label class="form__label-option form__label-radio" for="ios">Pink для IOS</label>
+            <input class="visually-hidden" id="android" type="radio" name="android" value="0" checked>
+            <label class="form__label-option form__label-radio" for="android"> Pink для Android</label>
+            <input class="visually-hidden" id="windows" type="radio" name="windows" value="0">
+            <label class="form__label-option form__label-radio" for="windows">Windows Phone</label>
+        </fieldset>
+        <fieldset>
+          <label class="form__label-entry">Опишите свои эмоции
+            <textarea class="form__ticket" cols="3" name="ticket" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+          <button type="submit" class="form__submit">Отправить форму</button>
+          <p class="form__legend"><span class="form__note">*</span>- Обязательные поля</p>
+        </fieldset>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">
