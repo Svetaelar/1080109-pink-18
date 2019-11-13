@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк. Страница фото</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
+    <header class="site-header">
+      <a class="site-header__logo logo" href="index.html">
         <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
       </a>
       <nav class="main-nav">
@@ -14,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="contest.html">Конкурс</a>
+              <a class="site-list__link" href="contest.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="site-list__link" href="#">html academy</a>
             </li>
           </ul>
         </div>
@@ -31,64 +32,80 @@
     </header>
     <main class="page-main">
       <section class="photo">
-        <h1 class="page-main__title">Фотографии пользователей</h1>
+        <header class="page-header">
+          <h1 class="page-header__slogan">Фотографии пользователей</h1>
+        </header>
         <p class="photo__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="photo__list">
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--one card__img--hit" src="https://via.placeholder.com/150x150" width="320" height="137" alt="Фото с высоты птичьего полета"></a>
-            <cite class="card__author-name">Анна</cite>
-            <span class="card__time">(5 минут назад)</span>
-            <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">215</span>
+            <a href="#"><img class="card__img card__img--one card__img--hit" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото с высоты птичьего полета"></a>
+            <div class="card-wrapper card-wrapper-hit">
+              <cite class="card__author-name">Анна</cite>
+              <span class="card__time">(5 минут назад)</span>
+              <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">215</span>
+            </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--two" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Камера снимает белую машину"></a>
-            <cite class="card__author-name">Левон</cite>
-            <span class="card__time">(5 часов назад)</span>
-            <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">356</span>
+            <a href="#"><img class="card__img card__img--two" src="/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Камера снимает белую машину"></a>
+            <div class="card-wrapper">
+              <cite class="card__author-name">Левон</cite>
+              <span class="card__time">(5 часов назад)</span>
+              <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">356</span>
+            </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--three" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Барабанная установка>"></a>
-            <cite class="card__author-name">Антон</cite>
-            <span class="card__time">(12 часов назад)</span>
-            <p class="card__text">Соседи будут рады!</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">666</span>
+            <a href="#"><img class="card__img card__img--three" src="/img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка>"></a>
+            <div class="card-wrapper">
+              <cite class="card__author-name">Антон</cite>
+              <span class="card__time">(12 часов назад)</span>
+              <p class="card__text">Соседи будут рады!</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">666</span>
+            </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--four" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Вид на высотку через стеклянный потолок"></a>
-            <cite class="card__author-name">Борис</cite>
-            <span class="card__time">(20 часов назад)</span>
-            <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">215</span>
+            <a href="#"><img class="card__img card__img--four" src="/img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Вид на высотку через стеклянный потолок"></a>
+            <div class="card-wrapper">
+              <cite class="card__author-name">Борис</cite>
+              <span class="card__time">(20 часов назад)</span>
+              <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">215</span>
+            </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--five" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Рынок, продают дыни и арбузы"></a>
-            <cite class="card__author-name">Сергей</cite>
-            <span class="card__time">(25 часов назад)</span>
-            <p class="card__text">Самая кубанская бахча в мире!</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">4</span>
+            <a href="#"><img class="card__img card__img--five" src="/img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок, продают дыни и арбузы"></a>
+            <div class="card-wrapper">
+              <cite class="card__author-name">Сергей</cite>
+              <span class="card__time">(25 часов назад)</span>
+              <p class="card__text">Самая кубанская бахча в мире!</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">4</span>
+            </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--five" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Человек сидит на горе"></a>
-            <cite class="card__author-name">Максим</cite>
-            <span class="card__time">(40 часов назад)</span>
-            <p class="card__text">Где снег-то?</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">150</span>
+            <a href="#"><img class="card__img card__img--five" src="/img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Человек сидит на горе"></a>
+            <div class="card-wrapper">
+              <cite class="card__author-name">Максим</cite>
+              <span class="card__time">(40 часов назад)</span>
+              <p class="card__text">Где снег-то?</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">150</span>
+            </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--five" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Крыло самолета"></a>
-            <cite class="card__author-name">Надежда</cite>
-            <span class="card__time">(45 часов назад)</span>
-            <p class="card__text">Всем GM и взаимные лайки!</p>
-            <span class="card__likes">Нравится:</span><span class="card__likes">260</span>
+            <a href="#"><img class="card__img card__img--five" src="/img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета"></a>
+            <div class="card-wrapper">
+              <cite class="card__author-name">Надежда</cite>
+              <span class="card__time">(45 часов назад)</span>
+              <p class="card__text">Всем GM и взаимные лайки!</p>
+              <span class="card__likes">Нравится:</span><span class="card__likes">260</span>
+            </div>
           </li>
         </ul>
         <p class="photo__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="editor">
         <h2 class="visually-hidden">Редактор фотографий</h2>
-        <img class="editor__image" src="https://via.placeholder.com/150x150" alt="Зимняя дорога" width="280" height="374">
+        <img class="editor__image" src="/img/photo-road-mobile@1x.jpg" alt="Зимняя дорога" width="280" height="374">
         <p class="editor__tools">
           <button class="editor__tool editor__tool--crop" type="button">Обрезать</button>
           <button class="editor__tool editor__tool--fill" type="button">Цвет</button>
@@ -105,25 +122,25 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">
-        <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
+        <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Приложение Pink">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы на YouTube</a>
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo-html-academy" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML академия">
+          <img class="logo-html-academy" src="../../img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
         </a>
       </div>
     </footer>
