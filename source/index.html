@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo logo">
+    <header class="site-header">
+      <a class="site-header__logo logo">
         <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
       </a>
       <nav class="main-nav">
@@ -14,16 +16,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="contest.html">Конкурс</a>
+              <a class="site-list__link" href="contest.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="site-list__link" href="#">html academy</a>
             </li>
           </ul>
         </div>
@@ -32,26 +34,26 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <section class="app">
-        <header class="app__header">
+        <header class="page-header">
           <h2 class="visually-hidden">Установите приложение Pink</h2>
-          <p class="app__slogan">Взгляните на мир иначе</p>
+          <p class="page-header__slogan">Взгляните на мир иначе</p>
         </header>
-        <img class="app__main-image" src="img/iphone-5-in-hand-png.png" alt="Телефон в руке" width="498" height="314">
-        <a class="app__btn-buy button" href="https://play.google.com/store/apps">Скачать приложение</a>
+        <img class="page-header-image" src="img/iphone-5-in-hand-png.png" alt="Телефон в руке" width="498" height="314">
         <div class="app__os os">
+          <a class="app__btn-buy button" href="https://play.google.com/store/apps">Скачать приложение</a>
           <ul class="os__list">
             <li class="os__item">
-              <a class="os__link os__link--ios" href="https://play.google.com/store/apps">Скачать для Ios</a>
+              <a class="os__link os__link--ios" href="https://play.google.com/store/apps" aria-label="Скачать для Ios"></a>
             </li>
             <li class="os__item">
-              <a class="os__link os__link--android" href="https://play.google.com/store/apps">Скачать для Андроид</a>
+              <a class="os__link os__link--android" href="https://play.google.com/store/apps" aria-label="Скачать для Андроид"></a>
             </li>
             <li class="os__item">
-              <a class="os__link os__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">Скачать для Windows</a>
+              <a class="os__link os__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Скачать для Windows"></a>
             </li>
           </ul>
+          <p class="app__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="app__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -157,25 +159,25 @@
       </section>
       <footer class="page-footer">
         <a class="page-footer__logo logo">
-          <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
+          <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Приложение Pink">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы на YouTube</a>
+              <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="logo-html-academy" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML академия">
+            <img class="logo-html-academy" src="../../img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
           </a>
         </div>
       </footer>

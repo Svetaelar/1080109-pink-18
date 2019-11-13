@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк. Конкурс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
+    <header class="site-header">
+      <a class="site-header__logo logo" href="index.html">
         <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
       </a>
       <nav class="main-nav">
@@ -14,23 +16,26 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a>Конкурс</a>
+              <a class="site-list__link">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="site-list__link" href="#">html academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <header class="page-header">
+        <h1 class="page-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </header>
+      <div class="form-wrapper">
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__name">
           <label class="form__label-entry">Фамилия
@@ -87,29 +92,30 @@
           <button type="submit" class="form__submit">Отправить форму</button>
           <p class="form__legend"><span class="form__note">*</span>- Обязательные поля</p>
         </fieldset>
+      </div>
       </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">
-        <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
+        <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Приложение Pink">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы на YouTube</a>
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo-html-academy" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML академия">
+          <img class="logo-html-academy" src="../../img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
         </a>
       </div>
     </footer>
