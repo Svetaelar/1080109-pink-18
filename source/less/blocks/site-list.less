@@ -2,6 +2,7 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .site-list__item {
@@ -20,4 +21,22 @@
 
 .site-list__link:active {
   opacity: 0.3;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+    text-transform: none;
+    min-width: 621px;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+    padding: 0;
+  }
+
+
 }
