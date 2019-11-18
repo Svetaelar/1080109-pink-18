@@ -2,28 +2,27 @@
   font-style: normal;
   font-weight: 400;
   font-family: "OpenSans";
-  src: url("../../fonts/opensans.woff2") format("woff2"),
-    url("../../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 300;
   font-family: "OpenSans";
-  src: url("../../fonts/opensanslight.woff2") format("woff2"),
-    url("../../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "OpenSans";
-  src: url("../../fonts/opensansbold.woff2") format("woff2"),
-    url("../../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
 
 body {
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -33,6 +32,17 @@ body {
   color: @bc-dark;
   font-style: normal;
   text-align: center;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 img {

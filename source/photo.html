@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк. Страница фото</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -39,7 +38,7 @@
         <p class="photo__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="photo__list">
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--one card__img--hit" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото с высоты птичьего полета"></a>
+            <a href="#"><img class="card__img card__img--one card__img--hit" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото с высоты птичьего полета"></a>
             <div class="card-wrapper card-wrapper-hit">
               <cite class="card__author-name">Анна</cite>
               <span class="card__time">(5 минут назад)</span>
@@ -48,7 +47,7 @@
             </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--two" src="/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Камера снимает белую машину"></a>
+            <a href="#"><img class="card__img card__img--two" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Камера снимает белую машину"></a>
             <div class="card-wrapper">
               <cite class="card__author-name">Левон</cite>
               <span class="card__time">(5 часов назад)</span>
@@ -57,7 +56,7 @@
             </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--three" src="/img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка>"></a>
+            <a href="#"><img class="card__img card__img--three" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка>"></a>
             <div class="card-wrapper">
               <cite class="card__author-name">Антон</cite>
               <span class="card__time">(12 часов назад)</span>
@@ -66,7 +65,7 @@
             </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--four" src="/img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Вид на высотку через стеклянный потолок"></a>
+            <a href="#"><img class="card__img card__img--four" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Вид на высотку через стеклянный потолок"></a>
             <div class="card-wrapper">
               <cite class="card__author-name">Борис</cite>
               <span class="card__time">(20 часов назад)</span>
@@ -75,7 +74,7 @@
             </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--five" src="/img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок, продают дыни и арбузы"></a>
+            <a href="#"><img class="card__img card__img--five" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок, продают дыни и арбузы"></a>
             <div class="card-wrapper">
               <cite class="card__author-name">Сергей</cite>
               <span class="card__time">(25 часов назад)</span>
@@ -84,7 +83,7 @@
             </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--five" src="/img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Человек сидит на горе"></a>
+            <a href="#"><img class="card__img card__img--five" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Человек сидит на горе"></a>
             <div class="card-wrapper">
               <cite class="card__author-name">Максим</cite>
               <span class="card__time">(40 часов назад)</span>
@@ -93,7 +92,7 @@
             </div>
           </li>
           <li class="photo__item card">
-            <a href="#"><img class="card__img card__img--five" src="/img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета"></a>
+            <a href="#"><img class="card__img card__img--five" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета"></a>
             <div class="card-wrapper">
               <cite class="card__author-name">Надежда</cite>
               <span class="card__time">(45 часов назад)</span>
@@ -106,19 +105,19 @@
       </section>
       <section class="editor">
         <h2 class="visually-hidden">Редактор фотографий</h2>
-        <img class="editor__image" src="/img/photo-road-mobile@1x.jpg" alt="Зимняя дорога" width="280" height="374">
-        <p class="editor__tools">
-          <button class="editor__tool editor__tool--crop" type="button">Обрезать</button>
-          <button class="editor__tool editor__tool--fill" type="button">Цвет</button>
-          <button class="editor__tool editor__tool--contrast" type="button">Тень</button>
-        </p>
-        <div class="editor__control range-control">
-          <div class="range-control__scale">
+        <div class="editor-wrapper">
+          <img class="editor__image" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога" width="280" height="374">
+          <p class="editor__tools">
+            <button class="editor__tool editor__tool--crop" type="button">Обрезать</button>
+            <button class="editor__tool editor__tool--fill" type="button">Цвет</button>
+            <button class="editor__tool editor__tool--contrast" type="button">Тень</button>
+          </p>
+          <div class="editor__control range-control">
+            <button class="range-control__toggle" type="button" aria-label="минимальное значение"></button>
           </div>
-          <button class="range-control__toggle" type="button" aria-label="минимальное значение"></button>
+          <a class="editor__post button button--pink" href="#">Запостить</a>
+          <a class="editor__post button button--cancel" href="#">Отмена</a>
         </div>
-        <a class="editor__post button" href="#">Запостить</a>
-        <a class="editor__post button" href="#">Отмена</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -141,7 +140,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo-html-academy" src="../../img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
+          <img class="logo-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
         </a>
       </div>
     </footer>

@@ -10,3 +10,78 @@
   border: solid 3px @bc-light;
   border-radius: 30px;
 }
+
+.button-download:hover {
+  box-shadow: 0 5px 7px 0 #010101c0;
+  border: solid 3px @bc-light;
+  background-color: @bc-light;
+  color: @cc-pink;
+}
+
+.button-download:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
+
+.button--pink {
+  color: @cc-pink;
+  border: solid 3px @cc-pink;
+}
+
+.button--pink:hover {
+  background-color: @cc-pink;
+  color: @bc-light;
+  border: solid 3px @cc-pink;
+}
+
+.button--pink:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--cancel {
+  opacity: 0.1;
+  border: solid 3px @bc-dark;
+  color: @bc-dark;
+}
+
+.button--cancel:hover {
+  opacity: 0.3;
+  border: solid 3px @bc-dark;
+  color: @bc-dark;
+}
+
+.button--cancel:active {
+  opacity: 0.3;
+  border: solid 3px @bc-dark;
+  color: @bc-light;
+  background-color: @bc-dark;
+}
+
+.button--submit {
+  padding: 23px 45px 22px 46px;
+  margin: 22px;
+
+  border: solid 2px #2aab6d;
+  background-color: #2aab6d;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @bc-light;
+  border-radius: 0%;
+}
+
+.button--submit:hover {
+  border: solid 2px #1c9b5e;
+  background-color: #1c9b5e;
+}
+
+.button--submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--submit:disabled {
+  border: solid 2px #e5e5e5;
+  background-color: #e5e5e5;
+}

@@ -1,57 +1,122 @@
 .os {
   min-height: 271px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: @bc-dark;
+  color: @bc-light;
+}
+
+.os__slogan {
+  display: none;
 }
 
 .os__list {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 206px;
+  margin: 0 auto;
 }
 
-.os__link {
-  display: block;
+.os__item {
+  position: relative;
 }
 
-.os__link::before {
+.os__item::before {
   content: "";
   position: absolute;
-  display: block;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  top: 0;
+  left: 0;
 }
 
-.os__link--ios {
+.os__item--ios {
   width: 47px;
   height: 56px;
 }
 
-.os__link--ios::before {
+.os__item--ios::before {
   width: 47px;
   height: 56px;
-  background-image: url("../../img/logo-apple.svg");
+  background-image: url("../img/logo-apple.svg");
 }
 
-.os__link--android {
+.os__item--android {
   width: 43px;
   height: 47px;
 }
 
-.os__link--android::before {
+.os__item--android::before {
   width: 43px;
   height: 47px;
-  background-image: url("../../img/logo-android.svg");
+  background-image: url("../img/logo-android.svg");
 }
 
-.os__link--windows {
+.os__item--windows {
   width: 44px;
   height: 41px;
 }
 
-.os__link--windows::before {
+.os__item--windows::before {
   width: 44px;
   height: 41px;
-  background-image: url("../../img/logo-microsoft.svg");
+  background-image: url("../img/logo-microsoft.svg");
+}
+
+.os__legend {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .os__slogan {
+    display: inline;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: normal;
+    width: 245px;
+    margin: 0 auto;
+  }
+
+  .os {
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 464px;
+  }
+
+  .os__legend {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .os__slogan {
+    display: inline;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: normal;
+    width: 245px;
+    margin: 0 auto;
+  }
+
+  .os {
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 558px;
+  }
+
+  .os__legend {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

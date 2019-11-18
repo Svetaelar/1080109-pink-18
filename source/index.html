@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-main">
     <header class="site-header">
-      <a class="site-header__logo logo">
-        <img class="logo__image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Приложение Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+      <div class="site-header__wrapper">
+        <a class="site-header__logo logo">
+        </a>
+        <nav class="main-nav site-header__nav">
+          <button class="main-nav__toggle site-header__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
@@ -25,45 +23,44 @@
               <a class="site-list__link" href="contest.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">html academy</a>
+              <a class="site-list__link" href="#">HTML academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
-    <main class="page-main">
+    <main >
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <section class="app">
-        <header class="page-header">
           <h2 class="visually-hidden">Установите приложение Pink</h2>
-          <p class="page-header__slogan">Взгляните на мир иначе</p>
-        </header>
-        <img class="page-header-image" src="img/iphone-5-in-hand-png.png" alt="Телефон в руке" width="498" height="314">
-        <div class="app__os os">
-          <a class="app__btn-buy button" href="https://play.google.com/store/apps">Скачать приложение</a>
-          <ul class="os__list">
-            <li class="os__item">
-              <a class="os__link os__link--ios" href="https://play.google.com/store/apps" aria-label="Скачать для Ios"></a>
-            </li>
-            <li class="os__item">
-              <a class="os__link os__link--android" href="https://play.google.com/store/apps" aria-label="Скачать для Андроид"></a>
-            </li>
-            <li class="os__item">
-              <a class="os__link os__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Скачать для Windows"></a>
-            </li>
-          </ul>
-          <p class="app__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="app__wrapper">
+          <div class="app__os os">
+            <p class="os__slogan">Взгляните на жизнь иначе!</p>
+            <a class="app__btn-buy button button-download" href="https://play.google.com/store/apps">Скачать приложение</a>
+            <ul class="os__list">
+              <li class="os__item os__item--ios">
+                <a class="os__link " href="https://play.google.com/store/apps" aria-label="Скачать для Ios"></a>
+              </li>
+              <li class="os__item os__item--android">
+                <a class="os__link " href="https://play.google.com/store/apps" aria-label="Скачать для Андроид"></a>
+              </li>
+              <li class="os__item os__item--windows">
+                <a class="os__link" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Скачать для Windows"></a>
+              </li>
+            </ul>
+            <p class="os__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+          <p class="advantages__slogan">Нам есть, что вам <br>предложить!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволитт вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -74,7 +71,16 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__smail-img" src="img/iphone-screen-3.png" width="157" height="320" alt="Розовое фото на экране телефона со смайликом">
+          <div class="advantages__effect">
+            <h3 class="advantages__effect-title">Эффект на 24 часа!</h3>
+            <p class="advantages__effect-text">
+              Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!
+            </p>
+            <a class="advantages__effect-link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -95,9 +101,9 @@
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="reviews__toggle slider__toggle" type="button">1</button>
-            <button class="reviews__toggle slider__toggle" type="button">2</button>
-            <button class="reviews__toggle slider__toggle" type="button">3</button>
+            <button class="reviews__toggle slider__toggle slider__toggle--active" type="button"></button>
+            <button class="reviews__toggle slider__toggle" type="button"></button>
+            <button class="reviews__toggle slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
@@ -105,10 +111,11 @@
         <h2 class="visually-hidden">Наши тарифы</h2>
         <div class="tariff-wrapper slider">
           <table class="tariff__list">
-            <tr class="tariff__title">
-              <td>Неизвестный</td>
-              <td>Стандарт 3.99 USD</td>
-              <td>Неизвестный</td>
+            <tr>
+              <td class="tariff__title">Неизвестный</td>
+              <td class="tariff__title"><span>Стандарт</span>
+                <span class="tariff__price">3.99 USD</span></td>
+              <td class="tariff__title">Неизвестный</td>
             </tr>
             <tr class="tariff__filter">
               <td class="tariff__value">Неизвестный</td>
@@ -127,9 +134,9 @@
             </tr>
           </table>
           <p class="tariff__toggles slider__toggles">
-            <button class="tariff__toggle slider__toggle" type="button">1</button>
-            <button class="tariff__toggle slider__toggle" type="button">2</button>
-            <button class="tariff__toggle slider__toggle" type="button">3</button>
+            <button class="tariff__toggle slider__toggle slider__toggle--active" type="button"></button>
+            <button class="tariff__toggle slider__toggle" type="button"></button>
+            <button class="tariff__toggle slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
@@ -140,11 +147,11 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__text">Звоните:</b>
-              <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="contacts__value contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__text">Пишите:</b>
-              <a class="contacts__value" href="mailto:mail@htmlacademy.ru" >mail@htmlacademy.ru</a>
+              <a class="contacts__value contacts__link" href="mailto:mail@htmlacademy.ru" >mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__text">Приезжайте в гости:</b>
@@ -161,23 +168,21 @@
         <a class="page-footer__logo logo">
           <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Приложение Pink">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="logo-html-academy" src="../../img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <p class="page-footer__text">Разработано:</p>
+          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="logo-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
           </a>
         </div>
       </footer>

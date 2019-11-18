@@ -1,15 +1,38 @@
-.app {
-  color: @bc-light;
-  min-height: 271px;
+.app__wrapper {
+  background: url("../../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-position: right 0;
+  min-height: 652px;
+  padding-top: 285px;
+  width: 320px;
 }
 
-.app__legend {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  text-align: center;
+
+@media (min-width: @tablet-width) {
+
+  .app__wrapper {
+    width: 700px;
+    margin: 0 auto;
+    background: url("../../img/iphone-hand-tablet@1x.png") no-repeat;
+    background-size: auto;
+    background-position: right 0 bottom 0;
+    padding-left: 20px;
+    padding-top: 97px;
+    min-height: 652px
+  }
+
 }
 
-.app__os {
-  background-color: @bc-dark;
+@media (min-width: @desktop-width) {
+
+  .app__wrapper {
+    background: url("../../img/iphone-hand-desktop@1x.png") no-repeat;
+    background-size: auto;
+    background-position: right 0 bottom 0;
+    width: 1190px;
+    margin: 0 auto;
+    padding-top: 97px;
+    padding-left: 105px;
+    min-height: 761px
+  }
+
 }

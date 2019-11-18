@@ -1,4 +1,86 @@
 .form-wrapper {
   background-color: @bc-light;
-  z-index: 2;
+  display: flex;
+}
+
+.form__intro {
+  padding: 22px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.form__fieldset {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0;
+  text-align: left;
+}
+
+.form__label-entry {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @cc-pink;
+}
+
+.form__label-ticket {
+  text-align: center;
+}
+
+.form__input-entry {
+  padding: 22px 20px 18px 20px;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  border: solid 2px #e5e5e5;
+}
+
+.form__input-entry:hover,
+.form__ticket:hover {
+  border: solid 2px @bc-dark;
+}
+
+.form__input-entry:active,
+.form__ticket:active,
+.form__input-entry:focus,
+.form__ticket:focus {
+  border: solid 2px @cc-pink;
+}
+
+.form-title {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @cc-pink;
+  text-align: center;
+}
+
+.form__label {
+  padding-left: 90px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__ticket {
+  padding: 19px 23px 28px 23px;
+  width: 100%;
+  min-height: 197px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  border: solid 2px #e5e5e5;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__note {
+  color: @cc-pink;
 }
