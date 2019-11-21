@@ -1,3 +1,12 @@
+.tariff {
+  min-height: 450px;
+  padding-top: 126px;
+}
+
+.tariff__wrapper {
+  overflow: hidden;
+}
+
 .tariff__list {
   border-collapse: collapse;
 }
@@ -27,4 +36,31 @@
   white-space: nowrap;
 
   border: solid 2px #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .tariff {
+    padding-top: 0;
+    min-height: 370px;
+  }
+
+  .tariff__list {
+    width: 500px;
+  }
+
+  .tariff__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff {
+    min-height: 466px;
+    padding-top: 79px;
+  }
+
+  .tariff__list {
+    margin: 0 auto;
+    width: 750px;
+  }
 }
