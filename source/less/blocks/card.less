@@ -1,6 +1,10 @@
 
 .card {
   text-align: left;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .card__author-name {
@@ -23,19 +27,41 @@
   padding-top: 20px;
 }
 
-.card-wrapper {
+.card__wrapper {
   background-color: @bg-lightgrey;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 25px 17px;
+  width: 280px;
+  min-height: 112px;
+
+  padding: 19px 17px;
+}
+
+.card__wrapper--hit {
+  padding: 10px 14px;
+  min-height: 186px;
 }
 
 .card__img {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 20px;
 }
 
 .card__img--hit {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    width: 300px;
+    min-height: 475px;
+  }
+
+  .card__wrapper--hit {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    min-height: 610px;
+  }
+
 }

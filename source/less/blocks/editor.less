@@ -5,6 +5,9 @@
 .editor-wrapper {
   background-color: @bg-lightgrey;
   padding: 20px;
+  min-height: 695px;
+  display: flex;
+  flex-direction: column;
 }
 
 .range-control__toggle {
@@ -24,4 +27,14 @@
   height: 2px;
   background-color: @bc-dark;
   position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .editor {
+    display: flex;
+  }
+
+  .editor-wrapper {
+    min-height: 483px;
+  }
 }
