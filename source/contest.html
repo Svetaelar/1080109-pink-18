@@ -35,10 +35,9 @@
       <header class="page-header">
         <h1 class="page-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </header>
-      <div class="form-wrapper">
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <fieldset class="form__fieldset">
+        <div class="form__fieldset form__fieldset--name">
           <label class="form__label-entry">Фамилия
             <input class="form__input-entry" type="text" name="surname" value="" placeholder="Укажите фамилию *">
           </label>
@@ -48,9 +47,9 @@
           <label class="form__label-entry">Отчество
             <input class="form__input-entry" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
           </label>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset-sel">
-          <legend class="form-title">Ваши безбашенные достижения в путешествии</legend>
+        </div>
+        <fieldset class="form__fieldset form__fieldset--sel">
+          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
             <input class="visually-hidden" id="shark" type="checkbox" name="shark" checked>
             <label class="form__label form__label-sel" for="shark">Сделал селфи на пляже с акулой</label>
 
@@ -69,7 +68,8 @@
             <input class="visually-hidden" id="hotel" type="checkbox" name="hotel">
             <label class="form__label form__label-sel" for="hotel">Разгромил отель</label>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__title">Контактная информация</legend>
           <label class="form__label-entry">Номер телефона
             <input class="form__input-entry" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
           </label>
@@ -77,22 +77,23 @@
             <input class="form__input-entry" type="email" name="email" value="" placeholder="Введите почту *">
           </label>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form-title">С каким приложением путешествовали?</legend>
-            <input class="visually-hidden" id="ios" type="radio" name="ios" value="0">
-            <label class="form__label form__label-radio" for="ios">Pink для IOS</label>
-            <input class="visually-hidden" id="android" type="radio" name="android" value="0" checked>
-            <label class="form__label form__label-radio" for="android"> Pink для Android</label>
-            <input class="visually-hidden" id="windows" type="radio" name="windows" value="0">
-            <label class="form__label form__label-radio" for="windows">Windows Phone</label>
+        <fieldset class="form__fieldset form__fieldset--app">
+          <legend class="form__title">С каким приложением путешествовали?</legend>
+          <input class="visually-hidden" id="ios" type="radio" name="ios" value="0">
+          <label class="form__label form__label-radio" for="ios">Pink для IOS</label>
+          <input class="visually-hidden" id="android" type="radio" name="android" value="0" checked>
+          <label class="form__label form__label-radio" for="android"> Pink для Android</label>
+          <input class="visually-hidden" id="windows" type="radio" name="windows" value="0">
+          <label class="form__label form__label-radio" for="windows">Windows Phone</label>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <label class="form__label-entry form__label-ticket">Опишите свои эмоции
+        <fieldset class="form__fieldset form__fieldset--text">
+          <legend class="form__title">Опишите свои эмоции</legend>
             <textarea class="form__ticket" name="ticket" placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
-          </label>
         </fieldset>
-        <button type="submit" class="button button--submit">Отправить форму</button>
-        <p class="form__legend"><span class="form__note">* </span>— Обязательные поля</p>
+        <div class="form__wrapper-button">
+          <button type="submit" class="button button--submit">Отправить форму</button>
+          <p class="form__legend"><span class="form__note">* </span>— Обязательные поля</p>
+        </div>
       </div>
       <section class="popup popup-error">
         <h2 class="visually-hidden">Окно ошибки</h2>

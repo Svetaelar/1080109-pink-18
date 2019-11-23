@@ -1,8 +1,9 @@
 .editor {
   text-align: center;
+  background-color: @bg-lightgrey;
 }
 
-.editor-wrapper {
+.editor__wrapper {
   background-color: @bg-lightgrey;
   padding: 20px;
   min-height: 695px;
@@ -27,14 +28,58 @@
   height: 2px;
   background-color: @bc-dark;
   position: relative;
+  display: none;
+}
+
+.editor__control-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editor__button-group {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: @tablet-width) {
   .editor {
     display: flex;
+    margin: 29px 20px;
   }
 
-  .editor-wrapper {
-    min-height: 483px;
+  .editor__wrapper {
+    min-height: 400px;
+    justify-content: space-between;
+  }
+
+  .editor__image {
+    width: 300px;
+  }
+
+  .editor__control-list {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .range-control {
+    display: flex;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .editor {
+    margin: 29px 130px;
+    padding: 57px 57px 57px 80px;
+  }
+
+  .editor__wrapper {
+    flex-grow: 1;
+  }
+
+  .editor__button-group {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
