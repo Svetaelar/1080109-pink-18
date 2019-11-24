@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Пинк. Страница фото</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -107,17 +108,31 @@
         <h2 class="visually-hidden">Редактор фотографий</h2>
 
           <img class="editor__image" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога" width="280" height="374">
-          <div class="editor-wrapper">
-          <p class="editor__tools">
-            <button class="editor__tool editor__tool--crop" type="button">Обрезать</button>
-            <button class="editor__tool editor__tool--fill" type="button">Цвет</button>
-            <button class="editor__tool editor__tool--contrast" type="button">Тень</button>
-          </p>
-          <div class="editor__control range-control">
-            <button class="range-control__toggle" type="button" aria-label="минимальное значение"></button>
+          <div class="editor__wrapper">
+          <ul class="editor__control-list">
+            <li>
+              <button class="editor__tool editor__tool--crop" type="button">Обрезать</button>
+              <div class="editor__control range-control">
+                <button class="range-control__toggle" type="button" aria-label="минимальное значение"></button>
+              </div>
+            </li>
+            <li>
+              <button class="editor__tool editor__tool--fill" type="button">Цвет</button>
+              <div class="editor__control range-control">
+                <button class="range-control__toggle" type="button" aria-label="минимальное значение"></button>
+              </div>
+            </li>
+            <li>
+              <button class="editor__tool editor__tool--contrast" type="button">Контраст</button>
+              <div class="editor__control range-control">
+                <button class="range-control__toggle" type="button" aria-label="минимальное значение"></button>
+              </div>
+            </li>
+          </ul>
+          <div class="editor__button-group">
+            <a class="editor__post button button--pink" href="#">Запостить</a>
+            <a class="editor__post button button--cancel" href="#">Отмена</a>
           </div>
-          <a class="editor__post button button--pink" href="#">Запостить</a>
-          <a class="editor__post button button--cancel" href="#">Отмена</a>
         </div>
       </section>
     </main>

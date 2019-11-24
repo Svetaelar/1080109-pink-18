@@ -1,6 +1,13 @@
 .form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
   background-color: @bc-light;
   display: flex;
+  flex-direction: column;
+  margin: 0 22px;
 }
 
 .form__intro {
@@ -10,12 +17,11 @@
 }
 
 .form__fieldset {
-  padding: 22px;
+  margin: 22px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 0;
-  text-align: left;
 }
 
 .form__label-entry {
@@ -51,7 +57,7 @@
   border: solid 2px @cc-pink;
 }
 
-.form-title {
+.form__title {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -83,4 +89,149 @@
 
 .form__note {
   color: @cc-pink;
+}
+
+@media (min-width: @tablet-width) {
+
+  .form-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .form__intro {
+    font-size: 18px;
+    padding: 26px 52px;
+    order:-5;
+  }
+
+  .form__label-entry {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__fieldset--name {
+    order: -4;
+  }
+
+  .form__fieldset--name .form__label-entry {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 54px;
+  }
+
+  .form__fieldset--contacts .form__input-entry {
+    margin: 0 44px;
+    width: auto;
+  }
+
+  .form__fieldset--contacts .form__label-entry {
+    text-align: center;
+  }
+
+  .form__input-entry {
+    padding: 14px 20px 13px 20px;
+    margin-left: 22px;
+  }
+
+  .form__fieldset:not(.form__fieldset--name) {
+    border: 2px solid #e5e5e5;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .form__title {
+    padding: 13px 33px;
+  }
+
+  .form__fieldset--sel {
+    min-height: 574px;
+  }
+
+  .form__fieldset--contacts {
+    min-height: 331px;
+    order: -2;
+  }
+
+  .form__fieldset--app {
+    min-height: 320px;
+    order: -3;
+  }
+
+  .form__fieldset--text {
+    min-height: 312px;
+  }
+
+  .form__wrapper-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form__ticket {
+    width: 496px;
+    min-height: 189px;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 132px;
+  }
+
+  .form__intro {
+    padding: 56px;
+  }
+
+  .form .form__fieldset--app {
+    margin: 0;
+  }
+
+  .form__fieldset {
+    width: 431px;
+  }
+
+  .form__fieldset--contacts,
+  .form__fieldset--text,
+  .form__fieldset--sel {
+    width: 100%;
+  }
+
+  .form__fieldset--name .form__label-entry {
+    margin-top: 0;
+  }
+
+  .form__fieldset--name {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .form__fieldset--contacts {
+    min-height: 158px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 44px;
+  }
+
+  .form__fieldset--sel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 228px;
+  }
+
+  .form__ticket {
+    width: 816px;
+    min-height: 124px;
+    margin: 0 auto;
+  }
+
+  .form__fieldset--text {
+    min-height: 213px;
+  }
+
+  .form__wrapper-button {
+    width: 100%;
+  }
 }
