@@ -1,29 +1,43 @@
 .page-header {
   color: @bc-light;
-  padding: 36px 46px 36px 48px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: @bc-dark;
+  min-height: 497px;
 }
 
 .page-header__slogan {
   font-size: 24px;
+  line-height: normal;
   font-style: normal;
   font-weight: 300;
   text-align: center;
+  padding: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__slogan {
     font-size: 50px;
     line-height: normal;
+    padding: 31px;
   }
 
   .page-header {
-    min-height: 348px;
+    min-height: 695px;
     padding: 0;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    min-height: 270px;
+    min-height: 394px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background-size: auto;
+    background-position: top;
+  }
+
+  .page-header__slogan {
+    margin: 75px;
   }
 }

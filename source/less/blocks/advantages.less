@@ -1,27 +1,40 @@
 .advantages {
-  min-height: 962px;
+  min-height: 1003px;
+  padding-top: 16px;
 }
 
 .advantages__wrapper {
   background-color: @bc-light;
 }
 
+.advantages__item--pink-smile {
+  min-height: 442px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position: 52px 164px;
+}
+
 .advantages__list {
-  margin-left: 33px;
-  margin-right: 33px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 91px;
   display: flex;
   flex-direction: column;
 }
 
 .advantages__slogan {
   font-size: 24px;
+  line-height: normal;
   font-weight: 300;
+  margin-top: 22px;
+  margin-bottom: 0;
 }
 
 .advantages__title {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 .advantages__description {
@@ -40,8 +53,9 @@
 .advantages__effect-title {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #000000;
+  width: 168px;
 }
 
 .advantages__effect-link {
@@ -57,42 +71,66 @@
   }
 
   .advantages {
-    padding-top: 47px;
+    min-height: 1107px;
+    padding-top: 40px;
   }
 
   .advantages__list {
-    min-height: 530px;
-    padding-left: 352px;
+    min-height: 427px;
+    padding-left: 301px;
+    padding-right: 10px;
     text-align: left;
     justify-content: center;
+  }
+
+  .advantages__item--pink-smile {
+    background: none;
+    min-height: 139px;
   }
 
   .advantages__effect {
     display: flex;
     flex-direction: column;
     min-height: 293px;
-    padding-left: 380px;
+    padding-left: 329px;
+    padding-top: 53px;
+  }
+
+  .advantages__effect-title {
+    margin-bottom: 0;
+  }
+
+  .advantages__effect-text {
+    margin: 10px 25px 10px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .advantages {
+    padding-top: 58px;
+  }
+
+
   .advantages__slogan {
     font-size: 50px;
     line-height: normal;
     text-align: center;
     margin: 0;
+    margin-bottom: -13px;
   }
 
   .advantages__list {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 60px 0;
-    padding-top: 324px;
+    padding-top: 336px;
     padding-left: 0;
+    padding-right: 0;
+    text-align: center;
   }
 
   .advantages__wrapper {
-    padding: 0 165px;
+    padding: 0 158px;
     margin: 0 auto;
     background-color: @bc-light;
   }
@@ -121,22 +159,27 @@
   }
 
   .advantages__effect {
-    min-height: 429px;
-    padding-left: 378px;
+    min-height: 417px;
+    padding-left: 340px;
+    justify-content: center;
+    padding-top: 0;
   }
 
   .advantages__effect-title {
     line-height: 30px;
-    margin: 0;
+    width: auto;
   }
 
   .advantages__effect-text {
     font-size: 18px;
     line-height: 30px;
+    margin: 24px 18px 30px 0;
   }
 
   .advantages__effect-link {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 45px;
+
   }
 }
