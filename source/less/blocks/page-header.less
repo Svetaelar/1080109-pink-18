@@ -1,43 +1,54 @@
 .page-header {
   color: @bc-light;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-position: bottom;
+  background-position-y: 0;
   background-color: @bc-dark;
-  min-height: 497px;
+  background-size: cover;
+}
+
+.page-header__block {
+  min-height: 155px;
 }
 
 .page-header__slogan {
   font-size: 24px;
-  line-height: normal;
+  line-height: 29px;
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  padding: 11px;
+  padding: 14px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__slogan {
     font-size: 50px;
-    line-height: normal;
-    padding: 31px;
+    line-height: 60px;
+    padding: 35px;
   }
 
   .page-header {
-    min-height: 695px;
     padding: 0;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: bottom;
+  }
 
+  .page-header__block {
+    min-height: 298px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    min-height: 394px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    background-size: auto;
-    background-position: top;
+    background-size: cover;
+  }
+
+  .page-header__block {
+    min-height: 268px;
   }
 
   .page-header__slogan {
-    margin: 75px;
+    padding: 46px;
   }
 }
