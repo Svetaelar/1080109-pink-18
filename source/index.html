@@ -7,12 +7,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-main">
-    <header class="site-header">
-      <div class="site-header__wrapper">
-        <a class="site-header__logo logo">
-        </a>
-        <nav class="main-nav site-header__nav">
-          <button class="main-nav__toggle site-header__toggle" type="button">Открыть меню</button>
+    <header class="site-header page-header">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <div class="site-header__wrapper">
+            <div class="site-header__logo">
+              <a class="logo" href="index.html">
+              </a>
+              <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
@@ -27,16 +29,15 @@
               <a class="site-list__link" href="#">HTML academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main >
+        </div>
+      </nav>
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <section class="app">
-          <h2 class="visually-hidden">Установите приложение Pink</h2>
-        <div class="app__wrapper">
-          <div class="app__os os">
-            <p class="os__slogan">Взгляните на жизнь иначе!</p>
+        <h2 class="visually-hidden">Установите приложение Pink</h2>
+      <div class="app__wrapper">
+        <p class="app__slogan">Взгляните на жизнь иначе!</p>
+        <div class="app__os">
+          <div class="os">
             <a class="app__btn-buy button button-download" href="https://play.google.com/store/apps">Скачать приложение</a>
             <ul class="os__list">
               <li class="os__item os__item--ios">
@@ -52,28 +53,33 @@
             <p class="os__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    </header>
+    <main >
+
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам <br>предложить!</p>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--grey">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--pink">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--pink-smile">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <div class="advantages__effect">
-            <h3 class="advantages__effect-title">Эффект<br> на 24 часа!</h3>
+            <h3 class="advantages__effect-title">Эффект на 24 часа!</h3>
             <p class="advantages__effect-text">
               Британские ученые провели исследования
               и доказали, что положительный эффект
@@ -184,10 +190,10 @@
         <div class="page-footer__copyright">
           <p class="page-footer__text">Разработано:</p>
           <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="logo-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
           </a>
         </div>
       </footer>
+      <script src="js/script.js"></script>
     </main>
   </body>
 </html>

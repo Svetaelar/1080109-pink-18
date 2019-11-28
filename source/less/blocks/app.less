@@ -1,24 +1,57 @@
+
+
 .app__wrapper {
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  background-position-x: 0;
-  background-position-y: 100px;
-  min-height: 652px;
-  padding-top: 385px;
-  width: 320px;
+  background-position-x: 37%;
+  background-position-y: 89px;
+  min-height: 647px;
+  margin: 0 auto;
 }
 
+.app__os {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 309px;
+  background-color: @bc-dark;
+}
+
+.app__slogan {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+  color: @bc-light;
+  width: 226px;
+  margin: 20px auto;
+}
+
+.app__btn-buy {
+  padding: 18px 30px 15px 33px;
+}
 
 @media (min-width: @tablet-width) {
 
   .app__wrapper {
-    width: 700px;
+    width: 620px;
     margin: 0 auto;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
     background-size: auto;
-    background-position: right 0 bottom 0;
-    padding-left: 20px;
-    padding-top: 97px;
-    min-height: 652px
+    background-position: bottom;
+    padding-top: 77px;
+    min-height: 620px;
+  }
+
+  .app__slogan {
+    font-size: 40px;
+    line-height: 48px;
+    width: 285px;
+    padding: 17px 18px 12px 30px;
+    margin: 0;
+  }
+
+  .app__os {
+    width: auto;
+    background-color: transparent;
+    margin-top: 16px;
   }
 
 }
@@ -31,9 +64,20 @@
     background-position: right 0 bottom 0;
     width: 1190px;
     margin: 0 auto;
-    padding-top: 97px;
-    padding-left: 105px;
+    padding-top: 110px;
+    padding-left: 125px;
     min-height: 761px
   }
 
+  .app__slogan {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 17px 18px 34px 30px;
+}
+
+.app__btn-buy {
+  font-size: 21px;
+  line-height: 18px;
+  padding: 15px 29px 15px 28px;
+}
 }

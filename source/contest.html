@@ -7,13 +7,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-main">
-    <header class="site-header">
-      <a class="site-header__logo logo" href="index.html">
-      </a>
-      <nav class="main-nav">
+    <header class="site-header page-header">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="site-header__wrapper">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+          <div class="site-header__logo">
+            <a class="logo" href="index.html"></a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -29,13 +29,13 @@
             </li>
           </ul>
         </div>
-        </div>
       </nav>
+      <div class="page-header__block wrapper">
+        <h1 class="page-header__slogan wrapper">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
     <main>
-      <header class="page-header">
-        <h1 class="page-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </header>
+      <div class="wrapper">
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <div class="form__fieldset form__fieldset--name">
@@ -109,31 +109,29 @@
         <button type="button" class="button button--submit">Закрыть окно</button>
       </section>
       </form>
-
+    </div>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo logo">
+    <footer class="page-footer wrapper">
+      <a class="page-footer__logo">
         <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Приложение Pink">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="HTML академия">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на YouTube"></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="page-footer__text">Разработано:</p>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

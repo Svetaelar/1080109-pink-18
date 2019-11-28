@@ -2,7 +2,6 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 100%;
 }
 
 .site-list__item {
@@ -13,6 +12,7 @@
 
 .site-list__link {
   color: @bc-light;
+  margin: 0 auto;
 }
 
 .site-list__link:hover {
@@ -23,6 +23,17 @@
   opacity: 0.3;
 }
 
+@media (max-width:@tablet-before) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: flex;
+  }
+
+}
+
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
@@ -31,11 +42,13 @@
     font-weight: 400;
     text-transform: none;
     min-width: 621px;
+    align-items: center;
   }
 
   .site-list__item {
     box-shadow: none;
     padding: 0;
+
   }
 
 

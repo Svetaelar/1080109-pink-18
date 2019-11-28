@@ -8,13 +8,13 @@
 }
 
 .social__item {
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   opacity: 0.1;
   border: solid 3px @bc-dark;
   border-radius: 50%;
   background-color: @bg-lightgrey;
-  margin-right: 17px;
+  margin: 7px;
 }
 
 .social__link::before {
@@ -34,4 +34,12 @@
 
 .social__link--youtube::before {
   background-image: url("../../img/icon-youtube.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .social__item {
+    margin: 0;
+    margin-right: 16px;
+  }
+
 }

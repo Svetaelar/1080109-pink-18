@@ -1,22 +1,51 @@
 .site-header {
-  background-color: @bc-dark;
+
 }
 
 .site-header__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .site-header__logo {
-  width: 75px;
-  height: 20px;
+  padding: 22px;
+  min-height: 69px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+}
+
+.logo {
   background: url("../img/logotype-white-mobile-svg.svg") no-repeat;
   background-size: contain;
+  display: block;
+  width: 75px;
+  height: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .site-header {
     margin: 0 auto;
+  }
+
+  .site-header__wrapper {
+
+  }
+
+  .site-header__logo {
+    min-height: 109px;
+    padding-top: 26px;
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .logo {
+    background: url("../img/logo-pink-white-tablet.svg") no-repeat;
+    background-size: contain;
+    width: 147px;
+    height: 40px;
   }
 }
 
@@ -29,16 +58,22 @@
   .site-header__wrapper {
     width: 940px;
     margin: 0 auto;
-    padding-top: 24px;
     flex-direction: row;
     justify-content: space-between;
-
+    align-content: center;
+    padding-top: 16px;
   }
 
   .site-header__logo {
+    padding: 0;
+    padding-top: 10px;
+    min-height: 69px;
+  }
+
+  .logo {
     width: 147px;
-    height: 40px;
-    background: url("../../img/logo-pink-white-desktop.svg") no-repeat;
+    height: 66px;
+    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
     background-size: contain;
     flex-shrink: 0;
   }
