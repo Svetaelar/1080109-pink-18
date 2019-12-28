@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .card__author-name {
@@ -26,11 +26,11 @@
 .card__likes-value {
   font-size: 12px;
   color: @cc-pink;
-  padding-top: 9px;
+  padding-top: 4px;
+  padding-bottom: 1px;
   text-transform: uppercase;
   padding-left: 32px;
   display: inline-block;
-
 }
 
 .card__likes-value {
@@ -41,15 +41,16 @@
   background-color: @bg-lightgrey;
   width: 280px;
   min-height: 112px;
-
+  position: relative;
   padding: 19px 17px;
   margin: 0 auto
 }
 
 .card__wrapper--hit {
-  padding: 11px 12px 0 17px;
-  min-height: 205px;
+  padding: 18px 12px 0 17px;
+  min-height: 193px;
   text-align: left;
+  margin-bottom: 19px;
 
   .card__text {
     margin-bottom: 8px;
@@ -65,42 +66,157 @@
   text-transform: uppercase;
 }
 
-.card__img {
-}
-
 .card__img--hit {
   margin: 0;
 }
 
 .card__link-foto {
-  height: 180px;
+  line-height: 0;
+  display: block;
+}
+
+.card__sticker {
+  width: 142px;
+  height: 36px;
+  background-color: @cc-pink;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 21px 11px 20px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 18px;
+}
+
+.card__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  left: 17px;
+  bottom: 25px;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 @media (min-width: @tablet-width) {
   .card {
     width: 300px;
     min-height: 455px;
+    margin-bottom: 20px;
   }
 
   .card__wrapper {
     width: 100%;
     min-height: 155px;
+    padding: 24px 28px;
   }
 
   .card__wrapper--hit {
     margin: auto;
-    min-height: 150px;
+    min-height: auto;
     width: 620px;
+    padding: 23px 12px 0 28px;
   }
 
   .card__likes {
     padding-left: 0;
+    position: absolute;
+    bottom: 19px;
+  }
+
+  .card__wrapper::after {
+    right: 32px;
+    left: auto;
+  }
+
+  .card__wrapper--hit.card__wrapper::after {
+    right: 28px;
+    top: 29px;
+    left: auto;
+  }
+
+  .card__wrapper--hit .card__likes {
+    bottom: 45px;
+    right: 59px;
+  }
+
+
+  .card__link-foto {
+
+  }
+
+  .card__img--hit {
+    min-height: 509px;
+  }
+
+  .card__img--editor {
+    margin-right: 16px;
+  }
+
+  .card__sticker {
+    top: 57px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .card {
-    min-height: 519px;
+    min-height: 555px;
+    padding-top: 54px;
+    margin: 0 10px;
+  }
+
+  .card__wrapper--hit {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    min-height: 93px;
+    align-content: flex-start;
+
+    .card__author-name {
+      padding-right: 3px;
+    }
+  }
+
+  .card__wrapper::after {
+    bottom: 30px;
+  }
+
+  .card__wrapper--hit.card__wrapper::after {
+    right: 31px;
+    top: 28px;
+  }
+
+  .card__wrapper--hit .card__likes {
+    bottom: 43px;
+    right: 12px;
+  }
+
+
+
+  .card__likes {
+    margin-left: auto;
+  }
+
+  .card__likes-value {
+    padding-right: 49px;
+  }
+
+  .card__text {
+    order: 2;
+  }
+
+  .card__sticker {
+    top: 53px;
+    right: 129px;
+  }
+
+  .card__img--hit {
+    min-height: auto;
   }
 
 }

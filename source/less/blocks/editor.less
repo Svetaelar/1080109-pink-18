@@ -1,12 +1,13 @@
 .editor {
   text-align: center;
   background-color: @bg-lightgrey;
+  padding-top: 24px;
 }
 
 .editor__wrapper {
   background-color: @bg-lightgrey;
   padding: 20px;
-  min-height: 347px;
+  min-height: 355px;
   display: flex;
   flex-direction: column;
 }
@@ -19,37 +20,90 @@
   background-color: @bc-light;
   position: absolute;
   top: -6px;
-  left: 75%;
+  left: 80%;
 }
 
-.range-control {
+.range-control__toggle:active {
+  background-color: @cc-pink;
+}
+
+.editor__control-item {
+  position: relative;
+
+}
+
+.editor__control {
   margin: 20px;
   width: 240px;
   height: 2px;
   background-color: @bc-dark;
   position: relative;
   display: none;
+  position: absolute;
+}
+
+.editor__control--crop {
+  display: block;
+  position: absolute;
+  left: -83%;
+  top: 65px;
 }
 
 .editor__control-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  //margin-bottom: 107px;
+  padding: 0 16px;
+  margin-bottom: 0;
+  min-height: 159px;
 }
 
 .editor__button-group {
   display: flex;
   flex-direction: column;
+  min-height: 132px;
+  justify-content: space-between;
+}
+
+.editor__tool {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: #f2f2f2;
+}
+
+.editor__tool-svg {
+  fill: @cc-pink;
+  opacity: 100%;
+}
+
+.editor__tool-svg--disabled {
+  fill: #283645;
+  opacity: 30%;
+}
+
+.editor__tool-svg--disabled:hover {
+  opacity: 50%;
+}
+
+.editor__tool--fill {
+
 }
 
 @media (min-width: @tablet-width) {
   .editor {
     display: flex;
-    margin: 29px 20px;
+    margin: 0px auto;
+    padding: 58px 0 51px 22px;
   }
 
   .editor__wrapper {
     min-height: 400px;
     justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .editor__image {
@@ -60,26 +114,135 @@
     min-height: 200px;
     display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+
+  .editor__control-item {
+    display: flex;
+    margin-bottom: 16px;
+    /* min-height: 69px; */
+    padding-bottom: 11px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .editor__control {
+    position: relative;
+  }
+
+  .editor__control--crop {
+    left: auto;
+    top: auto;
   }
 
   .range-control {
     display: flex;
+    width: 202px;
+  }
+
+  .range-control__toggle {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+  }
+
+  .editor__post {
+    padding: 15px 83px 17px 74px;
+  }
+
+  .editor__button-group {
+    min-height: 148px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .editor__tool-svg {
+    fill: @cc-pink;
+    opacity: 100%;
+    width: 22px;
+    height: 22px;
+  }
+
+  .editor__tool-svg--contrast path {
+    fill: @cc-pink;
+    opacity: 100%;
+  }
+
+  .editor__tool-svg--contrast {
+    width: 18px;
+  }
+
+  .editor__control--crop .range-control__toggle {
+    left: 73%;
+  }
+
+  .editor__control--fill .range-control__toggle {
+    left: 12%;
+  }
+
+  .editor__control--contrast .range-control__toggle {
+    left: 48%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .editor {
-    margin: 29px 130px;
-    padding: 57px 57px 57px 80px;
+    padding: 57px 57px 50px 80px;
+    width: 940px;
+    margin-bottom: 26px;
+  }
+
+  .editor__tool {
+    width: 55px;
+  }
+
+  .editor__control {
+    width: 288px;
+    margin-left: 41px;
   }
 
   .editor__wrapper {
     flex-grow: 1;
+    width: 300px;
+    padding-left: 54px;
   }
 
   .editor__button-group {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-grow: 0;
+    align-items: flex-end;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .editor__post {
+    width: 183px;
+    padding: 15px 40px 17px 45px;
+    margin-bottom: 5px;
+  }
+
+  .editor__tool-svg {
+    fill: @cc-pink;
+    opacity: 100%;
+    width: 44px;
+    height: 44px;
+  }
+
+  .editor__tool-svg--contrast {
+    width: 35px;
+
+  }
+
+  .editor__control--crop .range-control__toggle {
+    left: 25%;
+  }
+
+  .editor__control--fill .range-control__toggle {
+    left: 85%;
+  }
+
+  .editor__control--contrast .range-control__toggle {
+    left: 56%;
   }
 }
 

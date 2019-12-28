@@ -11,7 +11,8 @@
   min-height: 155px;
 }
 
-.page-header__slogan {
+.page-header__slogan,
+.page-header__slogan--contest {
   font-size: 24px;
   line-height: 29px;
   font-style: normal;
@@ -20,11 +21,22 @@
   padding: 14px;
 }
 
+.page-header__slogan--contest {
+  padding: 27px;
+  padding-bottom: 57px;
+}
+
 @media (min-width: @tablet-width) {
-  .page-header__slogan {
+  .page-header__slogan,
+  .page-header__slogan--contest {
     font-size: 50px;
     line-height: 60px;
     padding: 35px;
+  }
+
+  .page-header__slogan--contest {
+    padding-top: 69px;
+    padding-bottom: 80px;
   }
 
   .page-header {
@@ -50,5 +62,10 @@
 
   .page-header__slogan {
     padding: 46px;
+  }
+
+  .page-header__slogan--contest {
+    padding: 82px;
+    padding-bottom: 100px;
   }
 }
