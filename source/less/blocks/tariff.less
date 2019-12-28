@@ -5,6 +5,36 @@
   padding-top: 100px;
 }
 
+.tariff__title--hit{
+  position: relative;
+}
+
+.tariff__title--hit::before {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -37px;
+  width: 104px;
+  height: 30px;
+  transform: rotate(-45deg);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 27px;
+  border-color: transparent transparent #d22856;
+}
+
+.tariff__title--hit::after {
+  content: "ХИТ";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @bc-light;
+}
+
 .tariff__wrapper {
   overflow: hidden;
   width: 320px;
@@ -14,7 +44,7 @@
 
 .tariff__list {
   border-collapse: collapse;
-  margin-left: -481px;
+  margin-left: -532px;
 }
 
 .tariff__title {
@@ -27,6 +57,8 @@
   text-transform: uppercase;
 
   border: solid 2px @bc-dark;
+  border-right-color: @bc-light;
+  border-left-color: @bc-light;
   background-color: @bc-dark;
 }
 
@@ -37,18 +69,25 @@
 
 .tariff__value {
   //padding: 4px 124px 14px 22px;
-  padding: 8px 96px 10px 20px;
+  padding: 12px 14px 8px 23px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: left;
   white-space: nowrap;
+  min-width: 276px;
 
   border: solid 2px #e5e5e5;
   background-color: @bc-light;
 }
 
-.tariff__value::before {
+.tariff__value-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.tariff__value svg {
+ // margin-left: 109px;
 }
 
 .tariff__toggles {
@@ -83,6 +122,18 @@
     min-width: 155px;
   }
 
+  .tariff__title--hit::before {
+    top: -31px;
+    left: -34px;
+    width: 75px;
+    height: 65px;
+  }
+
+  .tariff__title--hit::after {
+    top: 2px;
+    left: 5px;
+  }
+
   .tariff__wrapper {
     overflow: visible;
     width: auto;
@@ -101,7 +152,16 @@
     font-size: 0;
     line-height: 0;
     min-height: 45px;
-    padding: 7px 25px 7px 16px;
+    padding: 2px 22px 4px 21px;
+    min-width: auto;
+  }
+
+  .tariff__value-wrapper {
+    justify-content: center;
+  }
+
+  .tariff__value svg {
+    margin-left: 0;
   }
 
   .tariff__item {
@@ -157,7 +217,23 @@
   }
 
   .tariff__value {
-    padding: 14px 66px 14px 21px;
+    padding: 11px 66px 9px 21px;
+  }
+
+  .tariff__value svg {
+    margin-left: 46px;
+  }
+
+  .tariff__title--hit::before {
+    top: -22px;
+    left: -40px;
+    width: 101px;
+    height: 65px;
+  }
+
+  .tariff__title--hit::after {
+    top: 12px;
+    left: 8px;
   }
 
   .tariff__price {
