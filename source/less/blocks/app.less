@@ -1,9 +1,7 @@
 
 
 .app__wrapper {
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  background-position-x: 0;
-  background-position-y: 89px;
+
   min-height: 647px;
   margin: 0 auto;
 }
@@ -13,6 +11,19 @@
   margin: 0 auto;
   margin-top: 309px;
   background-color: @bc-dark;
+  position: relative;
+}
+
+.app__os::before {
+  content: "";
+  position: absolute;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  width: 320px;
+  height: 287px;
+  top: -286px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .app__slogan {
@@ -52,6 +63,10 @@
     width: auto;
     background-color: transparent;
     margin-top: 16px;
+  }
+
+  .app__os::before {
+    display: none;
   }
 
 }

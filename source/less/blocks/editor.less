@@ -110,17 +110,18 @@
   }
 
   .editor__control-list {
-    min-height: 200px;
+    min-height: 189px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0;
   }
 
   .editor__control-item {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 0;
     /* min-height: 69px; */
-    padding-bottom: 11px;
+    padding-bottom: 0;
     border-bottom: 1px solid #dddfe0;
   }
 
@@ -152,6 +153,11 @@
     min-height: 148px;
     justify-content: space-around;
     margin: 0 auto;
+  }
+
+  .editor__tool {
+    width: 45px;
+    height: 45px;
   }
 
   .editor__tool-svg {
@@ -192,11 +198,16 @@
 
   .editor__tool {
     width: 55px;
+    height: 50px;
   }
 
   .editor__control {
     width: 288px;
     margin-left: 41px;
+  }
+
+  .editor__control-list {
+    min-height: 197px;
   }
 
   .editor__wrapper {

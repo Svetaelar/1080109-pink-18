@@ -12,10 +12,10 @@
 .tariff__title--hit::before {
   content: '';
   position: absolute;
-  top: -11px;
+  top: -21px;
   left: -37px;
   width: 104px;
-  height: 30px;
+  height: 61px;
   transform: rotate(-45deg);
   background-color: transparent;
   border-style: solid;
@@ -44,7 +44,7 @@
 
 .tariff__list {
   border-collapse: collapse;
-  margin-left: -532px;
+  margin-left: -535px;
 }
 
 .tariff__title {
@@ -69,12 +69,12 @@
 
 .tariff__value {
   //padding: 4px 124px 14px 22px;
-  padding: 12px 14px 8px 23px;
+  padding: 10px 17px 10px 21px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: left;
   white-space: nowrap;
-  min-width: 276px;
+  min-width: 278px;
 
   border: solid 2px #e5e5e5;
   background-color: @bc-light;
@@ -105,7 +105,7 @@
 
 @media (min-width: @tablet-width) {
   .tariff {
-    padding-top: 98px;
+    padding-top: 100px;
     min-height: 316px;
   }
 
@@ -114,14 +114,16 @@
   }
 
   .tariff__title {
-    padding: 8px;
+    font-size: 16px;
+    line-height: 30px;
     min-width: 155px;
+    padding: 10px 7px 4px 10px;
   }
 
   .tariff__title--hit::before {
-    top: -31px;
-    left: -34px;
-    width: 75px;
+    top: -27px;
+    left: -36px;
+    width: 85px;
     height: 65px;
   }
 
@@ -148,7 +150,7 @@
     font-size: 0;
     line-height: 0;
     min-height: 45px;
-    padding: 2px 22px 4px 21px;
+    padding: 2px 17px 4px 21px;
     min-width: auto;
   }
 
@@ -164,6 +166,8 @@
     font-size: 14px;
     line-height: 30px;
     text-transform: none;
+    padding-right: 23px;
+    padding-left: 16px;
   }
 
   .tariff__price {
@@ -182,7 +186,7 @@
 @media (min-width: @desktop-width) {
   .tariff {
     min-height: 466px;
-    padding-top: 92px;
+    padding-top: 93px;
   }
 
 
@@ -197,7 +201,9 @@
 
   .tariff__title {
     padding: 17px;
-    min-width: 233px;
+    padding: 14px 12px 18px 12px;
+    min-width: 236px;
+    font-size: 18px;
   }
 
   .tariff__comments,
