@@ -61,7 +61,7 @@
 .editor__button-group {
   display: flex;
   flex-direction: column;
-  min-height: 132px;
+  min-height: 125px;
   justify-content: space-between;
 }
 
@@ -71,6 +71,8 @@
   padding: 0;
   border: 0;
   background: #f2f2f2;
+  outline: none;
+  fill: @cc-pink;
 }
 
 .editor__tool-svg {
@@ -89,6 +91,10 @@
 
 .editor__tool--fill {
 
+}
+
+.editor__post {
+  padding: 16px 30px 17px 33px;
 }
 
 @media (min-width: @tablet-width) {
@@ -158,6 +164,16 @@
   .editor__tool {
     width: 45px;
     height: 45px;
+  }
+
+  .editor__tool svg {
+    fill: @cc-pink;
+    opacity: 100%;
+    width: 22px;
+  }
+
+  .editor__tool--contrast svg {
+    width: 16px;
   }
 
   .editor__tool-svg {
@@ -236,6 +252,14 @@
     opacity: 100%;
     width: 44px;
     height: 44px;
+  }
+
+  .editor__tool svg {
+    width: 45px;
+  }
+
+  .editor__tool--contrast svg {
+    width: 32px;
   }
 
   .editor__tool-svg--contrast {

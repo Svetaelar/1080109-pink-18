@@ -1,0 +1,63 @@
+.logo__main {
+  display: none;
+}
+
+.logo__main--mobile {
+  display: block;
+}
+
+.logo__main {
+  fill: @bc-light;
+}
+
+.logo:hover .logo__main {
+  fill: @cc-pink;
+}
+
+.logo__footer {
+  fill: @bc-dark;
+}
+
+.logo__footer--desktop {
+  display: none;
+}
+
+.logo__academy {
+  fill: @cc-pink;
+}
+
+.page-footer__link .logo__academy:hover {
+  fill: @bc-dark;
+}
+
+@media (min-width: @tablet-width) {
+
+  .logo__main--mobile {
+    display: none;
+  }
+
+  .logo__main--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .logo__main--tablet {
+    display: none;
+  }
+
+  .logo__main--desktop {
+    display: block;
+  }
+
+  .logo__footer--desktop {
+    display: block;
+  }
+
+  .logo__footer--mobile {
+    display: none;
+  }
+
+
+}

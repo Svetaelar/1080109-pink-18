@@ -5,6 +5,9 @@
   background-position-y: 0;
   background-color: @bc-dark;
   background-size: cover;
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg")
+  }
 }
 
 .page-header__block {
@@ -43,6 +46,9 @@
     padding: 0;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: bottom;
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg")
+    }
   }
 
   .page-header__block {
@@ -54,6 +60,9 @@
   .page-header {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-size: cover;
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg")
+    }
   }
 
   .page-header__block {

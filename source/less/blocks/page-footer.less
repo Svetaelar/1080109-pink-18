@@ -8,7 +8,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 36px;
-  padding-bottom: 26px;
+  padding-bottom: 23px;
 }
 
 .page-footer--index {
@@ -22,15 +22,21 @@
 }
 
 .page-footer__link {
-  padding-top: 13px;
+  padding-top: 0;
 }
 
-.page-footer__link:hover {
+.page-footer__link:hover .logo__academy {
+  fill: @cc-pink;
+}
 
+.page-footer__logo:hover .logo__footer {
+  fill:@cc-pink;
 }
 
 .page-footer__text {
-  padding-right: 15px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,19 +55,20 @@
 
   .page-footer__logo {
     margin-left: 20px;
-    margin-bottom: 11px;
+    margin-bottom: 16px;
   }
 
   .page-footer__text {
-    padding-right: 15px;
+    padding-right: 7px;
+    margin-top: 14px;
   }
 
   .page-footer__link {
-    padding-top: 7px;
+    padding-top: 0;
   }
 
   .page-footer__copyright {
-    padding-right: 20px;
+    padding-right: 13px;
     margin: 0;
   }
 }
@@ -76,26 +83,36 @@
   }
 
   .page-footer__link {
-    padding-top: 13px;
+    padding-top: 0;
   }
 
   .page-footer__text {
     font-size: 18px;
     line-height: 18px;
-    padding-right: 12px;
+    padding-right: 5px;
+    margin-top: 18px;
   }
 
   .page-footer__logo {
-    margin-right: 27px;
-    margin-left: 25px;
+    margin-right: 35px;
+    margin-left: 27px;
+    margin-bottom: 10px;
   }
 
   .page-footer__logo--index {
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .page-footer--index .social {
+    padding-top: 0;
   }
 
   .page-footer__copyright {
-    padding-right: 25px;
+    padding-right: 21px;
+    padding-top: 6px;
+    align-items: flex-end;
+
   }
 
 
