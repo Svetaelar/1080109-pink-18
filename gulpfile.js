@@ -3,7 +3,7 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
-var rename = require("gulp-csso")
+var rename = require("gulp-rename")
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -52,7 +52,7 @@ gulp.task("refresh", function (done) {
 })
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png, jpg, svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
@@ -70,7 +70,7 @@ gulp.task("webp", function () {
 })
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/{icon-*,logo-*}.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))

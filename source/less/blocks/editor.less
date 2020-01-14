@@ -164,11 +164,12 @@
   .editor__tool svg {
     fill: @cc-pink;
     opacity: 100%;
-    width: 22px;
+    width: auto;
   }
 
   .editor__tool--contrast svg {
-    width: 16px;
+    width: auto;
+    fill: @cc-pink;
   }
 
   .editor__tool-svg {
@@ -197,6 +198,10 @@
 
   .editor__control--contrast .range-control__toggle {
     left: 48%;
+  }
+
+  .editor__tool--crop:hover {
+    opacity: 50%;
   }
 }
 
