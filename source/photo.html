@@ -5,11 +5,11 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Пинк. Страница фото</title>
     <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page-main">
     <svg style="display:none">
       <include src="build/img/sprite.svg"></include>
     </svg>
-  </head>
-  <body class="page-main">
     <header class="site-header page-header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="site-header__wrapper">
@@ -44,11 +44,12 @@
         </div>
       </nav>
       <div class="page-header__block wrapper">
-        <h1 class="page-header__slogan">Фотографии <br>пользователей</h1>
+        <h1 class="page-header__slogan"> Фотографии<br>пользователей</h1>
       </div>
     </header>
     <main>
       <section class="photo wrapper">
+        <h2 class="visualy-hidden">Фото пользователей</h2>
         <p class="photo__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photo__item photo__item--hit">
 
@@ -194,7 +195,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-road-mobile@2x.webp 2x, img/photo-road-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
             <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
@@ -242,10 +243,10 @@
     </main>
     <footer class="page-footer wrapper">
       <a class="page-footer__logo">
-        <svg class="logo__footer logo__footer--mobile" width="148" height="40">
+        <svg class="page-footer__svg page-footer__svg--mobile" width="148" height="40">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
-        <svg class="logo__footer logo__footer--desktop" width="148" height="40">
+        <svg class="page-footer__svg page-footer__svg--desktop" width="148" height="40">
           <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>
@@ -263,7 +264,7 @@
       <div class="page-footer__copyright">
         <p class="page-footer__text">Разработано</p>
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="logo__academy" width="42" height="42">
+          <svg class="page-footer__svg-academy" width="42" height="42">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>

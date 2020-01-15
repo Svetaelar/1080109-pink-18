@@ -5,28 +5,28 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
     <svg style="display:none">
       <include src="build/img/sprite.svg"></include>
     </svg>
-  </head>
-  <body class="page-main">
     <header class="site-header page-header">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-          <div class="site-header__wrapper">
-            <div class="site-header__logo">
-              <a class="logo" href="index.html">
-                <svg class="logo__main logo__main--mobile" width="75" height="22">
-                  <use xlink:href="#logo-pink-white-mobile"></use>
-                </svg>
-                <svg class="logo__main logo__main--tablet" width="148" height="40">
-                  <use xlink:href="#logo-pink-white-tablet"></use>
-                </svg>
-                <svg class="logo__main logo__main--desktop" width="148" height="40">
-                  <use xlink:href="#logo-pink-white-desktop"></use>
-                </svg>
-              </a>
-              <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-            </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="site-header__wrapper">
+          <div class="site-header__logo">
+            <a class="logo" href="index.html">
+              <svg class="logo__main logo__main--mobile" width="75" height="22">
+                <use xlink:href="#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="logo__main logo__main--tablet" width="148" height="40">
+                <use xlink:href="#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="logo__main logo__main--desktop" width="148" height="40">
+                <use xlink:href="#logo-pink-white-desktop"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
@@ -67,10 +67,8 @@
         </div>
       </div>
     </section>
-
     </header>
     <main>
-
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -248,15 +246,23 @@
 
         <div class="contacts__google-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858715975966!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570701570175!5m2!1sru!2sru" style="border:0; width:100%; height:100%" allowfullscreen=""></iframe>
-          <img class="contacts__image-map" src="img/layer-153.jpg" width="100%" height="100%" alt="ул. Большая Конюшенная 19/8">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="contacts__image-map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная 19/8">
+          </picture>
         </div>
       </div></section>
       <footer class="page-footer page-footer--index wrapper">
       <a class="page-footer__logo page-footer__logo--index">
-        <svg class="logo__footer logo__footer--mobile" width="148" height="40">
+        <svg class="page-footer__svg page-footer__svg--mobile" width="148" height="40">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
-        <svg class="logo__footer logo__footer--desktop" width="148" height="40">
+        <svg class="page-footer__svg page-footer__svg--desktop" width="148" height="40">
           <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>
@@ -274,7 +280,7 @@
       <div class="page-footer__copyright">
         <p class="page-footer__text">Разработано</p>
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="logo__academy" width="42" height="42">
+          <svg class="page-footer__svg-academy" width="42" height="42">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>

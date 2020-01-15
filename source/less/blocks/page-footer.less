@@ -28,7 +28,7 @@
   fill: @cc-pink;
 }
 
-.page-footer__logo:hover .logo__footer {
+.page-footer__logo:hover .page-footer__svg {
   fill: @cc-pink;
 }
 
@@ -36,6 +36,22 @@
   padding-right: 8px;
   padding-left: 8px;
   margin-top: 10px;
+}
+
+.page-footer__svg-academy {
+  fill: @cc-pink;
+}
+
+.page-footer__link .page-footer__svg-academy:hover {
+  fill: @bc-dark;
+}
+
+.page-footer__svg {
+  fill: @bc-dark;
+}
+
+.page-footer__svg--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -111,5 +127,13 @@
     padding-right: 21px;
     padding-top: 6px;
     align-items: flex-end;
+  }
+
+  .page-footer__svg--desktop {
+    display: block;
+  }
+
+  .page-footer__svg--mobile {
+    display: none;
   }
 }
